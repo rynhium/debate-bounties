@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Bounty Hub</title>
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #121212; 
+            color: #e0e0e0;
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .header { 
+            text-align: center; 
+            font-size: 36px; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            color: #4CAF50; 
+        }
+        .section { 
+            background: #1e1e1e; 
+            border: 2px solid #4CAF50; 
+            border-radius: 16px; 
+            padding: 20px; 
+            width: 100%; 
+            max-width: 600px; 
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+            margin-bottom: 20px; 
+        }
+        .board-item { 
+            padding: 10px; 
+            border-bottom: 1px solid #4CAF50; 
+        }
+        .bounty-tier { 
+            font-weight: bold; 
+            color: #76ff03; 
+        }
+        .upload-section { 
+            background: #263238; 
+            padding: 15px; 
+            border-radius: 12px; 
+        }
+        .btn { 
+            background-color: #4CAF50; 
+            color: #121212; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            border-radius: 8px; 
+            width: 100%;
+            transition: background 0.3s; 
+        }
+        .btn:hover { 
+            background-color: #66bb6a; 
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background: #2c2c2c;
+            border: 1px solid #4CAF50;
+            color: #e0e0e0;
+            border-radius: 8px;
+        }
+        .points-section {
+            text-align: center;
+            margin-bottom: 20px;
+            background: #1e1e1e;
+            border: 2px solid #4CAF50;
+            border-radius: 16px;
+            padding: 15px;
+        }
+        .points-label { 
+            font-size: 20px; 
+            color: #76ff03; 
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #4CAF50;
+            margin-top: 5px;
+        }
+        .progress {
+            height: 100%;
+            background-color: #76ff03;
+            width: 70%;
+        }
+        .avatar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <img src="avatar_placeholder.png" alt="User Avatar" class="avatar">
+    <div class="header">Debate Bounty Hub</div>
+
+    <div class="points-section">
+        <h2>Hunter Points</h2>
+        <p class="points-label">Current Points: <strong>350</strong></p>
+        <p>Hunter Level: <strong>Level B</strong></p>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <p>Points Needed for Next Level: <strong>150</strong></p>
+        <p>Reputation: <strong>82/100</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>Bounty Board</h2>
+        <div class="board-item">Cut 3 cards on climate policy 🔥 <span class="bounty-tier">[Tier A - $20]</span></div>
+        <div class="board-item">Research kritik links for neoliberalism 💪 <span class="bounty-tier">[Tier B - $15]</span></div>
+        <div class="board-item">Construct a 2AC block on economic sanctions 📘 <span class="bounty-tier">[Tier C - $10]</span></div>
+    </div>
+
+    <div class="section">
+        <h2>Leaderboard</h2>
+        <p>1. Alex (720 Points)</p>
+        <p>2. Jamie (680 Points)</p>
+        <p>3. Chris (650 Points)</p>
+    </div>
+
+    <div class="section">
+        <h2>Quest Timer</h2>
+        <p>Current Challenge: Construct a 2AC block on the politics DA - Time Remaining: <strong>4 hours 23 minutes</strong></p>
+    </div>
+
+    <div class="section upload-section">
+        <h2>Upload Your Work</h2>
+        <input type="file" accept=".doc,.docx">
+        <button class="btn">Upload</button>
+    </div>
+</body>
+</html>
